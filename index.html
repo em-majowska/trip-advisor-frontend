@@ -13,22 +13,29 @@
 </head>
 
 <body>
-	<header class="container">
-		<a href="#"><img src="./assets/img/logo.svg" alt="TripAdvisor Homepage"></a>
-		<nav class="nav-primary" aria-label="Principale">
-			<ul class="nav-list">
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-pencil"></i>Avis</a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-heart"></i>Voyage</a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bell"></i>Alertes</a></li>
-				<li class="nav-item"><button>Connectez-vous</button></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>Panier</a></li>
-			</ul>
-		</nav>
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<a href="#"><img src="./assets/img/logo.svg" alt="TripAdvisor Homepage"></a>
+			<nav class="nav-primary" aria-label="Principale">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-pencil"></i>Avis</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-heart"></i>Voyage</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bell"></i>Alertes</a></li>
+					<li class="nav-item"><button>Connectez-vous</button></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>Panier</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
+
+	<!-- MAIN -->
 	<main class="container">
 		<h1><span>Explorez </span>Paris</h1>
 		<p class="baseline">Les revenus influencent le choix des expériences présentées sur cette page : <a href="#"
 				class="underline">en savoir plus</a>.</p>
+
+		<!-- NAV -->
 		<nav class="nav-secondary">
 			<ul>
 				<li><a href="#"><span>Hôtels</span><i class="fa-solid fa-bed"></i></a></li>
@@ -42,25 +49,28 @@
 			</ul>
 		</nav>
 
-		<div class="images"><a href="#" class="col-1"><img src="./assets/img/view.jpg" alt="La vue de Paris"></a>
+		<!-- IMAGES -->
+		<section class="images"><a href="#" class="col-1"><img src="./assets/img/view.jpg" alt="Bord de Seine"></a>
 			<div class="col-2">
-				<a href="#"><img src="./assets/img/caption-8.jpg" alt="Les touristes sur vespa"></a><a href="#">
-					<img src="./assets/img/caption-9.jpg" alt="Tour Eiffel">
+				<a href="#"><img src="./assets/img/caption-8.jpg" alt="Les touristes sur le scooter"></a><a href="#">
+					<img src="./assets/img/caption-9.jpg" alt="Champs de Mars">
 				</a>
 			</div>
-		</div>
+		</section>
 		<nav class="nav-three">
 			<ul>
-				<li><a href="#" class="underline">Europe</a><i class="fa-solid fa-angle-right"></i></li>
-				<li><a href="#" class="underline">France</a><i class="fa-solid fa-angle-right"></i></li>
-				<li><a href="#" class="underline">Île-de-France</a><i class="fa-solid fa-angle-right"></i></li>
-				<li><a href="#" class="underline">Paris <i class="fa-solid fa-caret-down"></i></a></li>
+				<li><a href="#">Europe</a><i class="fa-solid fa-angle-right"></i></li>
+				<li><a href="#">France</a><i class="fa-solid fa-angle-right"></i></li>
+				<li><a href="#">Île-de-France</a><i class="fa-solid fa-angle-right"></i></li>
+				<li><a href="#">Paris <i class="fa-solid fa-caret-down"></i></a></li>
 			</ul>
 			<div class="nav-place">
 				Visiter : Paris
 			</div>
 		</nav>
-		<div class="description">
+
+		<!-- DESCRIPTION -->
+		<section class="description">
 			<div class="col-1">
 				<h2>La Ville Lumière éblouit en tous points</h2>
 				<p>Aucun autre endroit au monde ne fait autant rêver que Paris. La ville séduit par son art, son architecture,
@@ -78,7 +88,244 @@
 				</div>
 				<div class="bottom"></div>
 			</div>
+		</section>
+
+		<!-- RECOMMENDATIONS -->
+		<section class="recommendations">
+			<h2>Paris : les immanquables</h2>
+
+			<!-- ATTRATCTIONS -->
+			<div class="attractions">
+				<div class="col-1">
+					<h3>Se divertir</h3>
+					<p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+					<a href="#" class="underline">Tout afficher</a>
+				</div>
+				<div class="col-2 carousel">
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/eiffel.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Tour Eiffel</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">139 901</span>
+						</div>
+						<p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/arc-de-triomphe-at-night.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Arc de Triomphe</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">56 987</span>
+						</div>
+						<p>Bâtiments architecturaux, Sites historiques</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/louvre.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Musée du Louvre</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">100 845</span>
+						</div>
+						<p>Bâtiments architecturaux, Musées d'art</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/vue-de-la-cour-d-honneur.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Musée Rodin</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">187 981</span>
+						</div>
+						<p>Musées spécialisés</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/the-amazingly-detailed.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Cathédrale Notre-Dame de Paris</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">139 901</span>
+						</div>
+						<p>Bâtiments architecturaux, Sites historiques</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/the-bookstore.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Librairie Shakespear and Company</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">140 321</span>
+						</div>
+						<p>Bibliothèques, Grands magasins</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/musee-dorsay.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Musée d'Orsay</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">67 761</span>
+						</div>
+						<p>Musées d'art</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/marche-vernaison-maison.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Marché aux Puces de Saint-Ouen</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">103 495</span>
+						</div>
+						<p>Antiquaires, Marchés aux puces & Marchés de rue
+							Saint-Ouen,<br>France À 5,4 kilomètres de Paris</p>
+					</a>
+				</div>
+			</div>
+
+			<!-- RESTAURANTS  -->
+			<div class="restaurants">
+				<div class="col-1">
+					<h3>Se restaurer</h3>
+					<p>Bistrots et bars typiques, et plus encore à Paris.</p>
+					<a href="#" class="underline">Tout afficher</a>
+				</div>
+				<div class="col-2 carousel">
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/meal6.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Frenchie</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">1 297</span>
+						</div>
+						<p>€€€€ · Française, Végétariens bienvenus, Plats sans gluten</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/meal5.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>114 Faubourg</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">1 754</span>
+						</div>
+						<p>€€ · Française, Européenne, Végétariens bienvenus</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/meal4.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Verjus</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">545</span>
+						</div>
+						<p>€€€ · Française, Européenne, Moderne</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/meal3.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>ASPIC</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">2 981</span>
+						</div>
+						<p>€€€€ · Française, Européenne, Saine</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/meal2.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Bistrot chic</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">1 345</span>
+						</div>
+						<p>€€€ · Française, Européenne, Saine, Moderne</p>
+					</a>
+					<a href="#" class="card">
+						<div class="image">
+							<img src="./assets/img/meal1.jpg" alt="">
+							<div class="heart"><i class="fa-solid fa-heart"></i></div>
+						</div>
+						<h4>Vive les huîtres</h4>
+						<div class="rating"><span class="star"></span><span class="star"></span><span class="star"></span><span
+								class="star"></span><span class="star"></span>
+							<span class="num">4 340</span>
+						</div>
+						<p>€€€€ · Française, Moderne, Bar à vins</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ARTICLES -->
+		<section class="articles">
+			<h2>Guides de voyageurs</h2>
+			<div class="carousel">
+				<div class="card">
+					<img src="./assets/img/visit1.jpg" alt="atelier d'un artiste">
+					<h3>Best summer things to do in Paris | Eatwith</h3>
+					<span class="quantity">36 articles</span>
+					<div class="author">
+						<img src="./assets/img/forks-icon.jpg" alt="Eatwith logo">
+						<p>Par <span>Eatwith</span></p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./assets/img/visit2.jpg" alt="l'intérieur magnifique du musée">
+					<h3>Les 10 monuments et musées de Paris à faire</h3>
+					<span class="quantity">10 articles</span>
+					<div class="author">
+						<img src="./assets/img/topito-com.jpg" alt="Topito logo">
+						<p>Par <span>Eatwith</span></p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./assets/img/visit3.jpg" alt="Les catacombes de Paris">
+					<h3>Top 10 des choses à faire ou à voir dans le 14ème</h3>
+					<span class="quantity">10 articles</span>
+					<div class="author">
+						<img src="./assets/img/topito-com.jpg" alt="Topito logo">
+						<p>Par <span>Eatwith</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<!-- FOOTER -->
+	<footer><img src="./assets/img/favicon-tripadvisor.svg" alt="TripAdvisor logo">
+		<p>Made at <a href="https://lereacteur.io">Le Reacteur</a> by <a href="https://github.com/em-majowska">Ewa
+				Majowska - 2026</a></p>
+	</footer>
 </body>
 
 </html>

@@ -1,111 +1,10 @@
-/* ============== GLOBALS ======================== */
-:root {
-  --accent-color: #ff5d5d;
-  --dark-gray: #333;
-  --light-gray: #f2f2f2;
-  --gray: #545454;
-  --transparent: rgba(0, 0, 0, 0.7);
+@import "./globals.css";
+@import "./header.css";
+@import "./footer.css";
+
+main {
+  padding-block-start: 60px;
 }
-body {
-  font-family: Ts-Reg, sans-serif;
-}
-
-button {
-  background: none;
-  border: 0;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.underline:hover {
-  text-decoration: underline;
-  color: var(--gray);
-}
-
-h1,
-h2 {
-  font-weight: bold;
-  font-family: TS-Med, sans-serif;
-}
-h1 {
-  font-size: 54px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: calc(1135px - 40px);
-}
-
-p {
-  line-height: 1.2;
-}
-
-/* ============== HEADER ======================== */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-
-  img {
-    display: inline-block;
-    width: 190px;
-  }
-
-  nav {
-    display: inline-block;
-  }
-
-  ul {
-    display: flex;
-    place-items: center;
-
-    i {
-      margin-inline-end: 5px;
-    }
-
-    a,
-    button {
-      padding: 10px 15px;
-      margin-inline-start: 10px;
-      border-radius: 20px;
-      font-weight: bold;
-    }
-
-    a:hover {
-      background-color: var(--light-gray);
-    }
-
-    button {
-      display: flex;
-      background-color: #000;
-      color: #fff;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: var(--transparent);
-    }
-  }
-}
-
-/* ============== MAIN ======================== */
-
 h1 {
   padding-block-start: 20px;
 
@@ -135,15 +34,18 @@ h1 {
     li {
       flex: 1;
     }
-
+    i {
+      font-size: 18px;
+    }
     a {
+      height: 100%;
       display: flex;
       padding: 12px 15px;
       justify-content: space-between;
       gap: 10px;
       border: 1px solid black;
       border-radius: 12px;
-      height: 100%;
+      line-height: 1.2;
     }
 
     a:hover {
@@ -170,12 +72,12 @@ h1 {
   }
 
   .col-1 {
-    flex: 3;
+    flex: 5;
   }
 
   .col-2 {
     display: flex;
-    flex: 2;
+    flex: 4;
     flex-direction: column;
     gap: 2px;
 
@@ -200,9 +102,14 @@ h1 {
 .nav-three ul {
   display: flex;
   gap: 5px;
+
   i {
     margin-inline-start: 5px;
     font-size: 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 
@@ -211,15 +118,16 @@ h1 {
 .description {
   display: flex;
   margin-block: 40px;
+
   .col-2 {
     flex: 2;
   }
+
   .col-1 {
     flex: 3;
   }
 
   .col-1 p {
-    margin-block-start: 30px;
     font-size: 20px;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: var(--dark-gray);
@@ -256,5 +164,161 @@ h1 {
   .bottom {
     height: 200px;
     background: center / cover no-repeat url(../img/image_trips_card_medium.png);
+  }
+}
+
+/* ============== ATTRACTIONS ======================== */
+
+.recommendations {
+  margin-block-start: 50px;
+
+  h3 {
+    font-size: 24px;
+  }
+  .attractions,
+  .restaurants {
+    display: flex;
+    margin-block-end: 40px;
+  }
+
+  h3 + p {
+    margin-block: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    max-width: 45ch;
+  }
+
+  a.underline {
+    font-weight: bold;
+    color: var(--gray);
+  }
+
+  .col-1 {
+    flex: 1 0 300px;
+    padding-inline-end: 50px;
+  }
+
+  .col-2 {
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 0 auto;
+    width: calc((100% - 15px) / 3);
+
+    img {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+    .image {
+      position: relative;
+    }
+    .heart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .num,
+    p {
+      color: var(--dark-gray);
+    }
+    .num {
+      font-size: 12px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    .rating .star {
+      display: inline-block;
+      margin-inline-end: 2px;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background-color: var(--green);
+    }
+  }
+
+  .card:hover {
+    img {
+      opacity: 0.7;
+    }
+    h4 {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ============== ARTICLES ======================== */
+
+.articles {
+  margin-block-start: 100px;
+
+  .carousel {
+    margin-block-start: 40px;
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: calc((100% - 40px) / 3);
+    }
+
+    img {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .quantity {
+      font-size: 14px;
+    }
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+
+    img {
+      border-radius: 50%;
+      width: 25px;
+    }
+
+    img {
+      aspect-ratio: 1/1;
+    }
+
+    span {
+      font-weight: bold;
+    }
   }
 }

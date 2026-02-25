@@ -1,0 +1,69 @@
+:root {
+  --accent-color: #ff5d5d;
+  --dark-gray: #333;
+  --light-gray: #f2f2f2;
+  --gray: #545454;
+  --transparent: rgba(0, 0, 0, 0.7);
+  --green: #04aa6c;
+}
+
+body {
+  font-family: Ts-Reg, sans-serif;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  color: var(--gray);
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+h1,
+h2 {
+  font-weight: bold;
+  font-family: TS-Med, sans-serif;
+}
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-block-end: 40px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(1135px - 40px);
+}
+
+p {
+  line-height: 1.2;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}

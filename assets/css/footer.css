@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 70px;
+  margin-block-start: 100px;
+  background-color: #faf1ed;
+  gap: 10px;
+
+  img {
+    width: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-weight: bold;
+  }
+}
