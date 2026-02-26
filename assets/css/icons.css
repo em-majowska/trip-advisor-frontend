@@ -1,8 +1,8 @@
 @font-face {
   font-family: "IconTripAdvisor";
   src: url("../fonts/IconTripAdvisor.eot?o4qzvm");
-  src: url("../fonts/IconTripAdvisor.eot?o4qzvm#iefix")
-      format("embedded-opentype"),
+  src:
+    url("../fonts/IconTripAdvisor.eot?o4qzvm#iefix") format("embedded-opentype"),
     url("../fonts/IconTripAdvisor.ttf?o4qzvm") format("truetype"),
     url("../fonts/IconTripAdvisor.woff?o4qzvm") format("woff"),
     url("../fonts/IconTripAdvisor.svg?o4qzvm#IconTripAdvisor") format("svg");
