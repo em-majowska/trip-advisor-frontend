@@ -48,7 +48,7 @@ header {
     a,
     button {
       padding: 10px;
-      border-radius: 20px;
+      border-radius: var(--bor-radius);
     }
 
     a:hover {

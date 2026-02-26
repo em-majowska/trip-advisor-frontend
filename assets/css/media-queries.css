@@ -21,7 +21,7 @@
       }
 
       button:hover {
-        background-color: var(--transparent);
+        background-color: #333;
       }
     }
 
@@ -59,9 +59,6 @@
         flex: 1;
         height: 50%;
       }
-    }
-    a:hover img {
-      opacity: 0.7;
     }
   }
 
