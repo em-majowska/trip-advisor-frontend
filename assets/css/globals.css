@@ -5,6 +5,8 @@
   --gray: #545454;
   --transparent: rgba(0, 0, 0, 0.7);
   --green: #04aa6c;
+
+  --padding: 12px 15px;
 }
 
 body {
@@ -12,10 +14,10 @@ body {
 }
 
 button {
-  background: none;
   border: 0;
-  cursor: pointer;
   font-weight: bold;
+  background: none;
+  cursor: pointer;
 }
 
 a {
@@ -30,19 +32,22 @@ a {
 .underline:hover {
   color: var(--gray);
 }
+
 h1,
 h2,
 h3,
 h4 {
   line-height: 1.2;
 }
+
 h1,
 h2 {
   font-weight: bold;
   font-family: TS-Med, sans-serif;
 }
+
 h1 {
-  font-size: 54px;
+  font-size: clamp(32px, calc(22px + 3.125vw), 54px);
 }
 
 h2 {
@@ -57,16 +62,38 @@ h3 {
 }
 
 .container {
+  width: min(100% - 32px, 1024px);
   margin: 0 auto;
-  max-width: calc(1135px - 40px);
 }
 
 p {
   line-height: 1.2;
 }
 
-.carousel::-webkit-scrollbar {
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow: scroll;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    gap: 8px;
+    flex: 1 0 auto;
+    width: calc((100% - 42px) / 1.5);
+  }
+}
+
+.carousel::-webkit-scrollbar,
+.nav-secondary::-webkit-scrollbar {
   display: none;
+}
+
+.carousel,
+.nav-secondary {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 i {

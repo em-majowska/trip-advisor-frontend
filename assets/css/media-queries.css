@@ -1,0 +1,166 @@
+@media (min-width: 768px) {
+  header {
+    .menu-btn {
+      display: none;
+    }
+
+    .logo {
+      width: 190px;
+    }
+    ul {
+      li.nav-item {
+        display: block;
+      }
+
+      button {
+        display: flex;
+        padding: var(--padding);
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: var(--transparent);
+      }
+    }
+
+    li:has(i.icon-search) {
+      display: none;
+    }
+  }
+
+  .nav-secondary {
+    overflow-x: initial;
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    ul li {
+      width: calc((100% - 30px) / 4);
+    }
+  }
+
+  .gallery {
+    gap: 2px;
+    margin-block-end: 20px;
+
+    .col-1 {
+      flex: 4;
+    }
+    .col-2 {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+      gap: 2px;
+
+      a {
+        flex: 1;
+        height: 50%;
+      }
+    }
+    a:hover img {
+      opacity: 0.7;
+    }
+  }
+
+  .nav-three {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-block-end: 40px;
+
+    ul {
+      display: flex;
+      gap: 5px;
+
+      i {
+        margin-inline-start: 5px;
+        font-size: 12px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .description {
+    .col-2 {
+      flex-direction: row;
+    }
+  }
+
+  .attractions,
+  .restaurants {
+    flex-direction: row;
+    .col-1 {
+      flex: 2;
+    }
+    .col-1 p {
+      padding-inline-end: 20px;
+    }
+
+    .col-2 {
+      flex: 5;
+    }
+    .card {
+      width: calc((100% - 30px) / 2.5);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    ul li span {
+      display: initial;
+      font-weight: bold;
+    }
+  }
+
+  .gallery {
+    height: 370px;
+
+    .col-1 {
+      flex: 4;
+    }
+
+    .col-2 {
+      flex: 3;
+    }
+  }
+
+  .description {
+    flex-direction: row;
+
+    .col-2 {
+      flex-direction: column;
+    }
+  }
+
+  .carousel {
+    .card {
+      width: calc((100% - 30px) / 3);
+    }
+  }
+}
+
+@media (min-width: 1184px) {
+  .nav-secondary {
+    ul {
+      flex-wrap: nowrap;
+    }
+
+    ul li {
+      flex: 1;
+    }
+
+    li.mobile {
+      display: none;
+    }
+  }
+  .gallery {
+    height: 430px;
+  }
+}

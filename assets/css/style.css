@@ -2,7 +2,7 @@
 @import "./header.css";
 @import "./footer.css";
 
-/* HEADER                     */
+/* HEADER */
 
 main {
   padding-block-start: 80px;
@@ -30,19 +30,20 @@ h1 {
 .nav-secondary {
   margin-block-end: 30px;
   font-weight: bold;
+  overflow-x: scroll;
 
   ul {
     display: flex;
     gap: 10px;
 
     li {
-      flex: 1;
+      flex: 1 0 auto;
     }
 
     a {
       height: 100%;
       display: flex;
-      padding: 12px 15px;
+      padding: var(--padding);
       justify-content: space-between;
       gap: 10px;
       border: 1px solid black;
@@ -57,14 +58,13 @@ h1 {
   }
 }
 
-/* ============== IMAGES ======================== */
+/* ============== GALLERY ======================== */
 
-.images {
+.gallery {
   display: flex;
-  height: 430px;
-  gap: 2px;
+  height: 280px;
   overflow: hidden;
-  margin-block-end: 20px;
+  margin-block-end: 40px;
 
   img {
     height: 100%;
@@ -72,71 +72,44 @@ h1 {
     object-fit: cover;
     object-position: center;
   }
-
+  /* TODO toutes les photos btn */
   .col-1 {
-    flex: 5;
+    flex: 2;
   }
-
-  .col-2 {
-    display: flex;
-    flex: 4;
-    flex-direction: column;
-    gap: 2px;
-
-    a {
-      flex: 1;
-      height: 50%;
-    }
-  }
-  a:hover img {
-    opacity: 0.7;
+  .desktop {
+    display: none;
   }
 }
 
 /* ============== SMALL NAV ======================== */
 .nav-three {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  margin-block-end: 40px;
-}
-
-.nav-three ul {
-  display: flex;
-  gap: 5px;
-
-  i {
-    margin-inline-start: 5px;
-    font-size: 12px;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
+  display: none;
 }
 
 /* ============== DESCRIPTION ======================== */
 
 .description {
   display: flex;
+  flex-direction: column;
   margin-block-end: 80px;
-
-  .col-2 {
-    flex: 2;
-  }
 
   .col-1 {
     flex: 3;
+    padding-block-end: 60px;
   }
 
   .col-1 p {
     max-width: 45ch;
-    font-size: 20px;
+    font-size: clamp(16px, calc(14.181818px + 0.568182vw), 20px);
     font-family: Georgia, "Times New Roman", Times, serif;
     color: var(--dark-gray);
   }
 
   .col-2 {
+    display: flex;
+    flex-direction: column;
+
+    flex: 2;
     border-radius: 15px;
     overflow: hidden;
 
@@ -148,6 +121,7 @@ h1 {
   .top {
     background-color: var(--accent-color);
     padding: 30px;
+    flex: 1;
 
     button {
       padding: 20px;
@@ -163,7 +137,8 @@ h1 {
   }
 
   .bottom {
-    height: 200px;
+    flex: 1 0 auto;
+    min-height: 200px;
     background: center / cover no-repeat url(../img/image_trips_card_medium.png);
   }
 }
@@ -173,6 +148,7 @@ h1 {
 .attractions,
 .restaurants {
   display: flex;
+  flex-direction: column;
   margin-block-end: 40px;
 
   h3 {
@@ -192,23 +168,10 @@ h1 {
   }
 
   .col-1 {
-    flex: 1 0 300px;
-    padding-inline-end: 50px;
-  }
-
-  .col-2 {
-    display: flex;
-    gap: 15px;
-    overflow: scroll;
+    margin-block-end: 40px;
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1 0 auto;
-    width: calc((100% - 15px) / 3);
-
     img {
       aspect-ratio: 4/3;
       object-fit: cover;
@@ -285,17 +248,6 @@ h1 {
   margin-block-end: 100px;
 
   .carousel {
-    display: flex;
-    gap: 20px;
-    overflow: scroll;
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      width: calc((100% - 40px) / 3);
-    }
-
     img {
       aspect-ratio: 4/3;
       object-fit: cover;

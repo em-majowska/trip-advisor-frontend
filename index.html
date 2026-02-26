@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/icons.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/media-queries.css">
 	<title>TripAdvisor</title>
 	<script src="https://kit.fontawesome.com/258ca14270.js" crossorigin="anonymous"></script>
 </head>
@@ -17,14 +18,18 @@
 	<!-- HEADER -->
 	<header>
 		<div class="container">
-			<a href="#"><img src="./assets/img/logo.svg" alt="TripAdvisor Homepage"></a>
+			<button class="menu-btn"><i class="icon-menu_bars"></i></button>
+			<a href="#" class="logo"><img src="./assets/img/logo.svg" alt="TripAdvisor Homepage"></a>
 			<nav class="nav-primary" aria-label="Principale">
 				<ul class="nav-list">
-					<li class="nav-item"><a href="#" class="nav-link"><i class="icon-pencil"></i>Avis</a></li>
-					<li class="nav-item"><a href="#" class="nav-link"><i class="icon-heart"></i>Voyage</a></li>
-					<li class="nav-item"><a href="#" class="nav-link"><i class="icon-notification_bell"></i>Alertes</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="icon-pencil"></i><span>Avis</span></a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="icon-heart"></i><span>Voyage</span></a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i
+								class="icon-notification_bell"></i><span>Alertes</span></a></li>
 					<li class="nav-item"><button>Connectez-vous</button></li>
-					<li class="nav-item"><a href="#" class="nav-link"><i class="icon-empty_cart"></i>Panier</a></li>
+					<li class="nav-item mobile"><a href="#" class="nav-link"><i class="icon-search"></i></a></li>
+					<li class="nav-item mobile"><a href="#" class="nav-link"><i
+								class="icon-empty_cart"></i><span>Panier</span></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -43,21 +48,23 @@
 				<li><a href="#"><span>Locations de vacances</span><i class="icon-vacation_rentals"></i></a></li>
 				<li><a href="#"><span>Activités</span><i class="icon-attractions"></i></a></li>
 				<li><a href="#"><span>Restaurants</span><i class="icon-restaurants"></i></a></li>
-				<li><a href="#"><span>Forums de voyage</span><i class="icons-forums"></i></a></li>
-				<li><a href="#"><span>Vols</span><i class="icon-flights"></i></a></li>
-				<li><a href="#"><span>Croisières</span><i class="icon-cruises"></i></a></li>
+				<li><a href="#"><span>Forums de voyage</span><i class="icon-forums"></i></a></li>
+				<li class="mobile"><a href="#"><span>Vols</span><i class="icon-flights"></i></a></li>
+				<li class="mobile"><a href="#"><span>Croisières</span><i class="icon-cruises"></i></a></li>
 				<li><a href="#"><span>Plus</span><i class="icon-more_horizontal"></i></a></li>
 			</ul>
 		</nav>
 
-		<!-- IMAGES -->
-		<section class="images"><a href="#" class="col-1"><img src="./assets/img/view.jpg" alt="Bord de Seine"></a>
-			<div class="col-2">
+		<!-- GALLERY -->
+		<section class="gallery"><a href="#" class="col-1"><img src="./assets/img/view.jpg" alt="Bord de Seine"></a>
+			<div class="col-2 desktop">
 				<a href="#"><img src="./assets/img/caption-8.jpg" alt="Les touristes sur le scooter"></a><a href="#">
 					<img src="./assets/img/caption-9.jpg" alt="Champs de Mars">
 				</a>
 			</div>
 		</section>
+
+		<!-- NAV THREE -->
 		<nav class="nav-three">
 			<ul>
 				<li><a href="#">Europe</a><i class="icon-single_chevron_right"></i></li>
