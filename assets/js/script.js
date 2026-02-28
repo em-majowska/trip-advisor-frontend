@@ -1,4 +1,3 @@
-require("dotenv").config();
 const $ = document;
 
 $.addEventListener("DOMContentLoaded", () => {
@@ -74,7 +73,10 @@ $.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await axios.post(process.env.DOMAIN, body);
+      const response = await axios.post(
+        "https://lasandra-unsympathising-roxann.ngrok-free.dev/contact",
+        body,
+      );
       console.log(response.data);
       contactForm.reset();
       contactForm.querySelector("p").textContent =
