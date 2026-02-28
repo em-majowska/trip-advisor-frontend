@@ -45,7 +45,6 @@ $.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
   // get form data
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -66,6 +65,9 @@ $.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await axios.post("http://localhost:3000/contact", body);
       console.log(response.data);
+      contactForm.reset();
+      contactForm.querySelector("p").textContent =
+        "Votre message a été envoyé !";
     } catch (error) {
       console.log(error.message);
     }
