@@ -74,7 +74,7 @@ $.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await axios.post(
-        "https://lasandra-unsympathising-roxann.ngrok-free.dev/contact",
+        "site--trip-advisor-backend--cbyxgq8rr8f2.code.run/contact",
         body,
       );
       console.log(response.data);
