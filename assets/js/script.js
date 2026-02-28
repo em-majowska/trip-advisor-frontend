@@ -74,7 +74,7 @@ $.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await axios.post(
-        "site--trip-advisor-backend--cbyxgq8rr8f2.code.run/contact",
+        "https://site--trip-advisor-backend--cbyxgq8rr8f2.code.run/contact",
         body,
       );
       console.log(response.data);
