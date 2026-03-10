@@ -1,4 +1,5 @@
 const $ = document;
+const apiUrl = window.appConfig.API_URL;
 
 $.addEventListener("DOMContentLoaded", () => {
   // add header border when scrolled
@@ -73,10 +74,7 @@ $.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await axios.post(
-        "https://site--trip-advisor-backend--cbyxgq8rr8f2.code.run/contact",
-        body,
-      );
+      const response = await axios.post(`${apiUrl}/contact`, body);
       console.log(response.data);
       contactForm.reset();
       contactForm.querySelector("p").textContent =
